@@ -51,7 +51,7 @@ function Products() {
         >
           {productList1.map((e) => {
             return (
-              <div key={e.id} class="col">
+              <div style={{ cursor: "pointer" }} key={e.id} class="col">
                 <img src={e.src} />
               </div>
             );
@@ -78,7 +78,7 @@ function Products() {
             {productList2.map((e) => {
               return (
                 <div key={e.id} class="col">
-                  <img src={e.src} />
+                  <img style={{ cursor: "pointer" }} src={e.src} />
                 </div>
               );
             })}
@@ -111,7 +111,7 @@ function Products() {
           {productPhone.map((x) => {
             return (
               <div key={x.id} class="col">
-                <img class="phones" src={x.src} />
+                <img style={{ cursor: "pointer" }} class="phones" src={x.src} />
               </div>
             );
           })}

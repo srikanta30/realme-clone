@@ -29,7 +29,10 @@ function Search() {
           <div>Smart life</div>
           <div>Accessories & Lifestyles</div>
           <div className="margin2" onClick={handleDiv}>
-            <img style={{ marginTop: "5px" }} src="./Group.png" />
+            <img
+              style={{ marginTop: "5px", cursor: "pointer" }}
+              src="./Group.png"
+            />
           </div>
         </div>
       </div>
