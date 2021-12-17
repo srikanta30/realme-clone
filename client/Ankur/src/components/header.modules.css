@@ -1,0 +1,23 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  height: 6vh;
+  box-shadow: 0px 1px #999999;
+}
+.topIn {
+  width: 5vw;
+  color: #999999;
+  border-right: 1px solid #999999;
+  margin: 1vh;
+  font-size: small;
+}
+.border {
+  border: none !important;
+  margin-top: 1vh;
+}
+.margin1 {
+  margin-left: 4vw;
+}
+.margin2 {
+  margin-right: 5vw;
+}
