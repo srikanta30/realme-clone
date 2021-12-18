@@ -1,0 +1,20 @@
+.searchDiv {
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+}
+
+.margin1 {
+  margin-left: 4vw;
+}
+.margin2 {
+  margin-right: 5vw;
+}
+#searchBox {
+  display: none;
+  height: 75vh;
+  width: 100vw;
+  background-color: white;
+  position: absolute;
+  top: 38px;
+}

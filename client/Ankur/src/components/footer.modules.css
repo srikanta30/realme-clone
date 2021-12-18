@@ -1,0 +1,16 @@
+.paraDiv {
+  margin-left: 4.5vw;
+}
+.para {
+  text-align: left;
+}
+.topSpace {
+  margin-top: 5vh;
+}
+.chatButton {
+  width: 80%;
+  height: 6vh;
+  border: 1ps solid black;
+  outline: black;
+  margin-top: 4vh;
+}
