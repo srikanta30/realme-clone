@@ -1,0 +1,139 @@
+#GridBox1{
+ display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  padding: 30px;
+  grid-column-gap: 20px;
+  width: 90%;
+
+  margin: auto;
+
+}
+
+#EachProduct{
+width: 300px;
+height: 440px;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+/* border: 1px solid grey; */
+}
+#EachProduct:hover{cursor: pointer;}
+#ProductFilterBtn:hover{cursor: pointer;}
+#FilterBtn:hover{cursor: pointer;}
+#TopRow2col2Left:hover{cursor: pointer;}
+span:hover{
+   color: #FFC625;
+   cursor: pointer;
+}
+#paginationimage:hover{cursor: pointer;}
+
+#ProductImg{
+    margin-top: 30px;
+    height: 170px;
+    left: 65px;
+    right: 65px;
+    top: 74px;
+}
+#ProductName{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.01em;
+color: #000000;
+margin-top: 30px;
+}
+
+#ProductPrice{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: 0.01em;
+color: #FF0000;
+}
+
+#ProductOuterBox{
+      background: #F5F5F5;
+     
+}
+
+#Heading1{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+
+letter-spacing: 0.01em;
+
+color: #000000;
+text-align: left;
+margin-left: 5%;
+}
+
+#ProductFilterBtn{
+ width:105px;
+height: 30px;
+border-radius: 15px;
+margin-right: 10px;
+background-color: white;
+font-family: "Open Sans";
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: 0.01em;
+border-style: none;
+}
+
+#ProductFilterBtn:hover{
+    color: #FFC625;
+    border: 1px solid #FFC625;
+}
+
+
+#AllBtn{
+    margin-left: 4%;
+    width: 40%;
+    text-align: left;
+    padding: 15px;
+}
+
+#EachProduct:hover{
+ /* box-shadow: 6px 6px 8px grey; */
+ box-shadow: 0 0 11px rgba(33,33,33,.4);
+
+}
+
+#ProductInput{
+width: 486px;
+height: 24px;
+border: 1px solid #FFC625;
+border-radius: 16px;
+padding: 10px;
+}
+#searchBar{
+    margin-left: -35px;
+}
+
+#TopRow2{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+   padding: 15px;
+   margin: auto;
+}
+#TopRow2col2{
+    display: flex;
+    flex-direction: column;
+}
+#TopRow2col2Left{
+    text-align: left;
+    letter-spacing: 0.2em;
+    
+}
+
