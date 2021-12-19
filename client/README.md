@@ -12,10 +12,13 @@ git clone https://github.com/srikanta30/Realme-Clone.git
 
 ## Usage
 
-# install the dependencies
-npm i
+# Install the dependencies
+  ```
+  npm i
+  ```
 
-# returns whole project
+
+# Run the project
 npm start
 ```
 
