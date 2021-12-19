@@ -1,0 +1,51 @@
+.upperbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.belowupperbar {
+    padding-left: 10%;
+}
+
+.outertop {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+}
+
+.firsttop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 5%;
+}
+
+.secondtop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    
+}
+
+.mainbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.innerfirsttop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25%;
+}

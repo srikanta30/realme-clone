@@ -1,0 +1,34 @@
+.upperbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.left-container {
+    width: 50%;
+}
+
+.right-container {
+    width: 50%;
+}
+
+.ctabox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.insidectabox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
