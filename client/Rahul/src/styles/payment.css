@@ -1,0 +1,264 @@
+.payment_main_div {
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+}
+
+/* ************************************ */
+
+.order_placed {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 100%;
+  background: #ffffff;
+  padding-bottom: 15px;
+}
+
+.order_placed1 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 90px;
+  padding-right: 90px;
+  margin: auto;
+}
+
+.order_placed2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 80px;
+  margin-top: 12px;
+}
+
+.hr_style {
+  width: 355px;
+  height: 0px;
+  margin-top: 55px;
+}
+
+.yellow_tick {
+  margin-top: 40px;
+}
+
+.circle1 {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background-color: #e5e5e5;
+  margin-top: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.timer_for_ordered {
+  display: flex;
+  flex-direction: column;
+}
+.timer_for_ordered1 {
+  padding-left: 20px;
+  color: #666666;
+}
+
+/* ************************************ */
+
+.payment_within {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  margin: auto;
+  height: 60px;
+  background: #fff3e9;
+  margin-top: 40px;
+}
+
+.payment_within1 {
+  display: flex;
+  padding-top: 17px;
+  color: #c86f64;
+  padding-left: 70px;
+}
+
+.payment_within2 {
+  padding-top: 17px;
+  padding-right: 70px;
+  color: #000000;
+}
+
+/* ************************************ */
+
+.address_detail {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  height: 60px;
+  margin: auto;
+  margin-top: 16px;
+  background: #ffffff;
+  
+}
+
+.address_detail1 {
+  margin-top: 17px;
+  padding-top: 6px;
+  padding-left: 70px;
+  color: #000000;
+}
+
+.address_detail2 {
+  margin-top: 17px;
+  padding-top: 6px;
+  padding-right: 70px;
+  color: #999999;
+  cursor: pointer;
+}
+
+/* ************************************ */
+
+.card_detail {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  margin: auto;
+  background: #ffffff;
+  margin-top: 34px;
+}
+
+.card_detail_1 {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.card_detail_1_1 {
+  margin-top: 17px;
+  padding-top: 6px;
+}
+
+.card_detail_1_2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  padding-top: 6px;
+  padding-right: 10px;
+  height: 28px;
+  width: 193px;
+  border: 1px solid #8dd904;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.security1 {
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.security2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  /* line-height: 20px; */
+  letter-spacing: 0.01em;
+  color: #8dd904;
+}
+
+/* ------------------------------------ */
+
+.card_detail_2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 34px;
+  height: 476px;
+  /* margin: auto; */
+  background: #ffffff;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 53px;
+}
+
+.card_detail_2_1 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.debit_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79px;
+  background: #f5f5f5;
+  color: #000000;
+}
+
+.card_detail_2_2 {
+  width: 75%;
+  border: 1px solid #ffc625;
+}
+
+.addnewcard {
+  display: flex;
+  padding-left: 76px;
+  align-items: center;
+  height: 79px;
+}
+
+.card_input_1,
+.card_input_2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 76px;
+  padding-right: 300px;
+}
+
+.card_input_2 {
+  margin-top: 20px;
+}
+
+.card_input_3 {
+  display: flex;
+  margin-top: 26px;
+  padding-left: 76px;
+}
+
+.checkbox_payment {
+  background: #ffc625;
+}
+
+.knowmore {
+  padding-left: 116px;
+}
+
+.card_number {
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  outline: none;
+}
+
+.paynow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 76px;
+  margin-top: 26px;
+  width: 192px;
+  height: 50px;
+  background: #ffc625;
+  cursor: pointer;
+}
+
+.thirdparty {
+    padding-left: 76px;
+    margin-top: 12px;
+    color: #999999;
+}
+
+
+.timer_for_ordered2 {
+  display: flex;
+  color: #666666;
+}
