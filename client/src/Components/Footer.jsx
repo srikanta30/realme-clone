@@ -144,7 +144,7 @@ function Footer() {
 
           <div class="col" style={{ marginLeft: "-4vw" }}>
             <div style={{ marginTop: "15vh" }}>
-              <h1>1800 102 2777</h1>
+              <h2>1800 102 2777</h2>
               <p style={{ margin: "0", color: "grey", fontSize: "small" }}>
                 9:00, 18:00, MON-SUN <br /> Including Holidays
               </p>

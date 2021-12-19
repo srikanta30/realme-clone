@@ -8,7 +8,7 @@ function Advertisement() {
           {laptops.map((e) => {
             return (
               <div class="col phones">
-                <img style={{ width: "15vw" }} src={e.src} alt="img"/>
+                <img style={{ width: "15vw" }} src={e.src} alt="img" />
               </div>
             );
           })}
@@ -39,11 +39,11 @@ function Advertisement() {
         </div>
       </div>
       <div class="row">
-        <div style={{ marginTop: "2vh" }}>
+        <div style={{ marginTop: "2vh", marginLeft: "10px" }}>
           <img src="Assets/Frame 1038540.png" alt="" />
         </div>
 
-        <div style={{ marginTop: "2vh" }}>
+        <div style={{ marginTop: "2vh", marginLeft: "10px" }}>
           {" "}
           <img src="Assets/Frame 1038541.png" alt="" />
         </div>
