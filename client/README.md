@@ -1,6 +1,6 @@
 <div bgcolor=white>
-# Realme clone
-Realme is a website where we could buy electronics appliances like mobile, laptop etc.
+# Realme Clone
+Realme is an ecommerce store for awesome tech products & electronics appliances like mobile, laptop etc.
 
 ## Installation
 
