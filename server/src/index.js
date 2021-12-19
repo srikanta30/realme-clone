@@ -5,26 +5,40 @@ const app = express();
 
 const cors = require("cors");
 const { body } = require("express-validator");
+const cookieSession = require("cookie-session");
 
 const googlePassport = require("./configs/google.passport");
-const fbPassport = require("./configs/facebook.passport");
+
+require("dotenv").config();
+const { ORIGIN } = process.env;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.options("*", cors());
+app.use(
+  cors({
+    origin: `${ORIGIN}`,
+    methods: "GET,POST,PUT,DELETE",
+    credentials: true,
+  })
+);
+app.options('*', cors());
+
+app.use(
+  cookieSession({ name: "session", keys: ["realme"], maxAge: 24 * 60 * 60 * 100 })
+);
 
 
-//Google & Facebook Authentication Setup:
+//Google Authentication Setup:
 
 app.use(googlePassport.initialize());
-app.use(fbPassport.initialize());
+app.use(googlePassport.session());
 
-googlePassport.serializeUser(function ({ user, token }, done) {
-  done(null, { user, token });
+googlePassport.serializeUser((user, done) => {
+  done(null, user);
 });
 
-googlePassport.deserializeUser(function ({ user, token }, done) {
-  done(null, { user, token });
+googlePassport.deserializeUser((user, done) => {
+  done(null, user);
 });
 
 //Importing Auth & User Controller:
@@ -33,10 +47,8 @@ const { register, login } = require("./controllers/auth.controller");
 const userController = require("./controllers/user.controller");
 
 app.get("/", (req, res) => {
-  return res.status(200).send("Welcome To Realme's Clone Server on Heroku!");
+  return res.status(200).send({"Error": "Sorry, you are not authorized to access our servers. 😉"});
 });
-
-app.use("/users", userController);
 
 //Validations:
 
@@ -68,61 +80,28 @@ app.post(
 
 // Google Authentication:
 
-const scope = [
-  "https://www.googleapis.com/auth/plus.login",
-  "https://www.googleapis.com/auth/userinfo.email",
-];
+
 app.get(
   "/auth/google",
-  googlePassport.authenticate("google", { scope: scope })
+  googlePassport.authenticate("google", { scope: ["profile", "email"] })
 );
 
 app.get(
   "/auth/google/callback",
   googlePassport.authenticate("google", {
-    failureRedirect: "/auth/google/failure",
+    failureRedirect: "/users/login/failed",
+    successRedirect: `${ORIGIN}`,
   }),
-  function (req, res) {
-    const { user, token } = req.user;
-    return res.status(200).json({ user, token });
+);
+
+const isAutheticated = (req, res, next) => {
+  if (req.isAuthenticated()) {
+    next();
+  } else {
+    res.status(401).send({"Error": "Sorry, you are not authorized to access our servers. 😉"});
   }
-);
+};
 
-// Facebook Authentication:
-
-app.get(
-  "/auth/facebook",
-  fbPassport.authenticate(
-    "facebook",
-    {
-      data: [
-        {
-          permission: "public_profile",
-          status: "granted",
-        },
-        {
-          permission: "email",
-          status: "granted",
-        },
-        {
-          permission: "user_friends",
-          status: "declined",
-        },
-      ],
-    },
-    { scope: "public_profile,email" }
-  )
-);
-
-app.get(
-  "/auth/facebook/callback",
-  fbPassport.authenticate("facebook", {
-    failureRedirect: "/auth/facebook/failure",
-  }),
-  function (req, res) {
-    const { user, token } = req.user;
-    return res.status(200).json({ user, token });
-  }
-);
+app.use("/users", isAutheticated, userController);
 
 module.exports = app;

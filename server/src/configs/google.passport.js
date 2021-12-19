@@ -10,8 +10,6 @@ var GoogleStrategy = require( 'passport-google-oauth2' ).Strategy;;
 
 const User = require('../models/user.model');
 
-const {newToken} = require('../controllers/auth.controller');
-
 const { BACKEND_URL, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET } = process.env;
 
 const url = `${BACKEND_URL}`;
@@ -25,13 +23,14 @@ googlePassport.use(new GoogleStrategy({
     let user = await User.findOne({email: profile?._json?.email});
 
     if(!user){
-        user = await User.create({
+      user = await User.create({
+          _id: profile?._json?.email,
           email: profile?._json?.email,
           password: uuidv4()
         });
     }
-    const token = newToken(user);
-    return done(null, {user, token});
+  
+    return done(null, user);
   }
 ));
 

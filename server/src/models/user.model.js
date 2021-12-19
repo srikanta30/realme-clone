@@ -1,14 +1,16 @@
-// Importing Mongoose:
+// Importing Mongoose & Bcrypt:
 
 const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
 
 // User Schema:
 
 const userSchema = new mongoose.Schema({
+    _id: { type: String, required: true},
     email: {type: String, required: true},
     password: {type: String, required: false},
     cart: [{ type: Object, required: false }],
-    address: [{ type: Object, required: false }]
+    address: [{ type: String, required: false }]
 }, {
     versionKey: false,
     timestamps: true
