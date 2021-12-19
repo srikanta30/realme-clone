@@ -1,4 +1,4 @@
-<div bgcolor="white">
+<div bgcolor=white>
 # Realme clone
 Realme is a website where we could buy electronics appliances like mobile, laptop etc.
 
