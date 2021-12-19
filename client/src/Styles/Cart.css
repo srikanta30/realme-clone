@@ -49,3 +49,65 @@ justify-content: space-around;
     justify-content: space-evenly;
     width: 25%;
 }
+
+.pincodebox {
+    padding: 10px;
+    width: 60%;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.pincontainer {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.checkbutton {
+    background-color: #E5E5E5;
+    color: #666666;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 40px;
+    border: 1px solid #E5E5E5;
+}
+
+.pincodediv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    padding: 25px;
+}
+
+.belowcart {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomflex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buybutton {
+    background-color: #ffc915;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    border: none;
+}

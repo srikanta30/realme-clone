@@ -307,7 +307,7 @@ export const Project = () => {
         <div id="GridBox1">
           {array.map((ele, i) => {
             return (
-              <div id="EachProduct" key={i}>
+              <div id="EachProduct" key={i} onClick={()=> {window.location.href="/product"}}>
                 <img id="ProductImg" src={ele.Image} alt="prod1" />
                 <p id="ProductName">{ele.Name}</p>
                 <p>{ele.Detail}</p>

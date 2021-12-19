@@ -1,6 +1,11 @@
 import { useState } from "react";
 import Modal from "react-modal";
 function SignUp({ state, setState }) {
+
+  const google = () => {
+    window.open(`${process.env.REACT_APP_SERVER}/auth/google`, "_self");     
+  };
+
   return (
     <>
       <div>
@@ -139,7 +144,7 @@ function SignUp({ state, setState }) {
               style={{ marginLeft: "40%" }}
               src="Assets/2702602 1.png"
               alt=""
-            />
+            onClick={google} />
             <img style={{ marginLeft: "4%" }} src="Assets/Vector.png" alt="" />
           </div>
           <div

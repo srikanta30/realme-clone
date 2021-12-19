@@ -45,7 +45,7 @@ function Address() {
                 <input onChange={handleChangeform} type="email" name="email" className="id_inp" placeholder='Please enter required email' />
                 <input onChange={handleChangeform} type="text" name="landmark" className="id_inp_2" placeholder='Landmark Example' /><br></br>
                 <input onChange={handleChangeform} type="checkbox" name="default" className="checkbox_inp" /> Set as default<br></br>
-                <input type="submit"  value="Save" id="" className="save_div" />
+                <input type="submit"  value="Save" id="" className="save_div" onClick={() => {window.location.href="/order"}}/>
                 <button onClick={() => {
                     return setFormData("");
                 }} className="cancle_div">Cancel</button>

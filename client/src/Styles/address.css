@@ -133,15 +133,17 @@
 .totalamount_div {
   width: 92%;
   margin: auto;
+  margin-bottom: 20px;
   height: 377px;
   background: #ffffff;
   margin-top: 20px;
 }
 
 .totalamount_div_1 {
-  width: 278px;
+  /* width: 400px; */
   padding-left: 840px;
   padding-top: 20px;
+  padding-right: 142px;
 }
 
 .total_quantity {

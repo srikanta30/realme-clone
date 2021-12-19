@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "../Pages/Home";
 import { Search } from "../Pages/Search";
 import { Product } from "../Pages/Product";
@@ -6,8 +6,10 @@ import { Cart } from "../Pages/Cart";
 import { Address } from "../Pages/Address";
 import { Order } from "../Pages/Order";
 import { Payment } from "../Pages/Payment";
+import { Success } from "../Pages/Success";
 
 const Router = () => {
+
   
   return (
     <div>
@@ -18,7 +20,8 @@ const Router = () => {
         <Route path="/cart" element={<Cart/>} />
         <Route path="/address" element={<Address />} />
         <Route path="/order" element={<Order />} />
-        <Route path="/payment" element={<Payment/>} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/success" element={<Success/>} />
       </Routes>
     </div>
   );

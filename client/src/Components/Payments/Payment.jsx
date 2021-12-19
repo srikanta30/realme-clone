@@ -35,7 +35,7 @@ function Payments() {
 
             <div className="payment_within">
                 <div className="payment_within1">Please complete the payment within <Counter /> </div>
-                <div className="payment_within2">Amount : Rs 340</div>
+                <div className="payment_within2">Amount : ₹ 402</div>
             </div>
 
             <div className="address_detail">
@@ -64,18 +64,18 @@ function Payments() {
                         <div className="addnewcard">Add New Card</div>
                         <div className="card_input_1">
                             <input type="text" className="card_number" placeholder='Card number' />
-                            <input type="text" className="card_number" placeholder='Expiry' />
+                            <input type="date" className="card_number" placeholder='Expiry' />
                         </div>
                         <div className="card_input_2">
                             <input type="text" className="card_number" placeholder='Card holder name' />
-                            <input type="text" className="card_number" placeholder='CVV' />
+                            <input type="password" className="card_number" placeholder='CVV' />
                         </div>
                         <div className="card_input_3">
                             <input type="checkbox" className="checkbox_payment" />
                             <div className="savecardproperty" style={{paddingLeft: "20px"}}>Save card securely for future payments</div>
                         </div>
-                        <div className="knowmore"><a href="">Know More</a></div>
-                        <div className="paynow">Paynow</div>
+                        <div className="knowmore"><a href="/">Know More</a></div>
+                        <div className="paynow" onClick={()=>{window.location.href="/success"}}>Pay Now</div>
                         <div className="thirdparty">You will be now redirected to a third-party website to complete the transaction.</div>
                     </div>
                 </div>

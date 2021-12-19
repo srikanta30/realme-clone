@@ -1,0 +1,19 @@
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bnbutton {
+    background-color: #ffc915;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 60px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}

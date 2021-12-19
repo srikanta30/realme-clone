@@ -28,9 +28,9 @@ function TotalAmount() {
                 <hr />
                 <div className="total_quantity">
                     <div className="total_1" style={{color: '#666666'}}>Total</div>
-                    <div className="total_2" style={{color: '#666666'}}>₹349</div>
+                    <div className="total_2" style={{color: '#666666'}}>₹402</div>
                 </div>
-                <button className="place_order" style={{color: '#666666',cursor:"pointer"}}>Place Order</button>
+                <button className="place_order" style={{color: '#666666',cursor:"pointer"}} onClick={()=>{window.location.href="/payment"}}>Place Order</button>
             </div>
         </div>
     )

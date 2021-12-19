@@ -13,21 +13,25 @@ function Search() {
     <>
       <div class="row">
         <div className="searchDiv">
-          <div className="margin1">
+          <div className="margin1" style={{ marginTop: "1vh" }}>
             <img
-              style={{ marginTop: "5px" }}
+              style={{ marginTop: "5px", cursor: 'pointer' }}
               src="./realme-logo 2.png"
-              alt="logo"
+              alt="logo" onClick={() => {window.location.href="/"}}
             />
           </div>
-          <div>realme smartphones</div>
-          <div>narzo smartphones</div>
-          <div>realme Tv</div>
-          <div>Tablet & Laptop</div>
-          <div>Audio</div>
-          <div>Smart life</div>
-          <div>Accessories & Lifestyles</div>
-          <div className="margin2" onClick={handleDiv}>
+          <div style={{ marginTop: "1.5vh" }}>realme smartphones</div>
+          <div style={{ marginTop: "1.5vh" }}>narzo smartphones</div>
+          <div style={{ marginTop: "1.5vh" }}>realme Tv</div>
+          <div style={{ marginTop: "1.5vh" }}>Tablet & Laptop</div>
+          <div style={{ marginTop: "1.5vh" }}>Audio</div>
+          <div style={{ marginTop: "1.5vh" }}>Smart life</div>
+          <div style={{ marginTop: "1.5vh" }}>Accessories & Lifestyles</div>
+          <div
+            className="margin2"
+            onClick={handleDiv}
+            style={{ marginTop: "1.5vh" }}
+          >
             <img
               style={{ marginTop: "5px", cursor: "pointer" }}
               src="./Group.png"
@@ -57,7 +61,7 @@ function Search() {
             />
             <img
               onClick={() => {
-                alert("move to search page");
+                window.location.href = "/search";
               }}
               src="Icons/Group 8.png"
               alt=""

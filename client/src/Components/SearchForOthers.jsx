@@ -14,10 +14,10 @@ function SearchForOthers() {
       <div class="row">
         <div className="searchDiv">
           <div className="margin1">
-            <img
-              style={{ marginTop: "5px" }}
+          <img
+              style={{ marginTop: "5px", cursor: 'pointer' }}
               src="../realme-logo 2.png"
-              alt="logo"
+              alt="logo" onClick={() => {window.location.href="/"}}
             />
           </div>
           <div>realme smartphones</div>

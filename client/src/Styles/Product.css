@@ -11,6 +11,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.shippingstrip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .left-container {
@@ -25,10 +33,128 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: #F5F5F5;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .insidectabox {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.newtag {
+    justify-content: center;
+    padding: 0 0.06rem;
+    color: #ff882c;
+    background: #fff3e9;
+    border-radius: 4px;
+    border: 1px solid #ff882c;
+    margin-bottom: 10px;
+    margin-right: 0.06rem;
+    max-width: 10%;
+    text-align: center;
+}
+
+.bybutton {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.whbutton {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 60px;
+    border: none;
+}
+
+.whbutton:hover {
+    border: 1px solid black;
+}
+
+.quantityheader {
+    margin-top: 20px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.atcbutton {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.atcbutton:hover {
+    background-color: black;
+    color: white;
+}
+
+.bnbutton {
+    background-color: #ffc915;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 60px;
+    border: none;
+}
+
+.pincodebox {
+    padding: 10px;
+    width: 60%;
+    height: 60px;
+    margin-right: 5px;
+}
+
+.checkbutton {
+    background-color: #E5E5E5;
+    color: #666666;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 60px;
+    border: 1px solid #E5E5E5;
+}
+
+.pincodediv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.previewbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
