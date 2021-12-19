@@ -35,6 +35,7 @@ function Header() {
   return (
     <>
       <div
+        class="row"
         style={{
           // position: "-webkit-sticky",
           position: "sticky",
@@ -44,7 +45,11 @@ function Header() {
       >
         <div className="top">
           <div className="top">
+<<<<<<< HEAD
           <div className="topIn margin1">
+=======
+            <div className="topIn margin1">
+>>>>>>> 50e0f83a64e0eb28912dd29abdc109ec8dde5a71
               <p>realmenew</p>
             </div>
             <div className="topIn">Brand</div>
