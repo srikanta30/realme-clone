@@ -7,18 +7,12 @@ Realme is a website where we could buy electronics appliances like mobile, lapto
 Use the package manager [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) to install react.
 
 ```bash
-create react-app realme-clone
+git clone https://github.com/srikanta30/Realme-Clone.git
 ```
 
 ## Usage
 
-```python
-import realme clone
-
-# give repository
-git pull
-
-# returns dependencies
+# install the dependencies
 npm i
 
 # returns whole project
@@ -30,6 +24,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update node as appropriate.
 
-## License
-[REALME](https://realme.com/in)
 </div>
