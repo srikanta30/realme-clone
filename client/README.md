@@ -13,7 +13,7 @@ create react-app realme-clone
 ## Usage
 
 ```python
-import foobar
+import realme clone
 
 # give repository
 git pull
