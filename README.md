@@ -36,7 +36,9 @@ realme is a technology brand officially established on May 4, 2018 by Sky Li. Th
 Clone the project
 
 
-  -[git clone](https://github.com/srikanta30/Realme-Clone/)
+```bash
+git clone https://github.com/srikanta30/realme-clone.git
+```
 
 
 Go to the project directory
